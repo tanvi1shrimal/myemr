@@ -1,0 +1,38 @@
+{
+  "name": "myemr",
+  "version": "1.0.0",
+  "description": "Marketing website for MYEMR",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-ruby-sass": "^2.1.1",
+    "browser-sync": "^1.3.5"
+  },
+  "devDependencies": {
+    "browser-sync": "^1.9.2",
+    "gulp": "^3.9.1",
+    "gulp-harp": "0.0.4",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-pug": "^3.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uncss": "^1.0.6",
+    "sass": "^0.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://tanvishrimal@gitlab.com/tanvishrimal/myemr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/tanvishrimal/myemr/issues"
+  },
+  "homepage": "https://gitlab.com/tanvishrimal/myemr#README"
+}

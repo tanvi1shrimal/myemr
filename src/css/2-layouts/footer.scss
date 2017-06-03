@@ -1,0 +1,95 @@
+footer {
+	background-color: $primary-blue;
+	padding:50px 0;
+	
+	@media(min-width:$sm) {
+		padding:30px 0;
+	}
+	@media(min-width:$md) {
+		padding:40px 0 30px;
+	}
+}
+.footer {
+	&__wrap {
+		@media(min-width:$sm) {
+			display: flex;
+		    justify-content: space-between;
+		}
+	}
+	&__title {
+		font-size: 16px;
+		color: $secondary-lightblue;
+		padding-bottom: 8px;
+		margin-top: 0;
+	}
+	&__para {
+		font-family: $Poppins-Semibold;
+		font-size: 22px;
+		color: $primary-white;
+		margin: 0;
+    	padding: 14px 0;
+    	&:hover,
+    	&:active,
+    	&:focus {
+    		color: $primary-white;
+    	}
+	}
+	&__item {
+		text-align:center;
+		&:last-child {
+			margin-bottom: 0;
+    		padding-bottom: 0;
+    		border-bottom: 0;
+		}
+	}
+	&__social {
+		margin: 0;
+    	padding: 16px 0;
+		li {
+			padding: 0;
+			a {
+				cursor: pointer;
+				color: $primary-white;
+				font-size: 22px;
+				opacity: 0.9;
+    			transition: all 300ms ease-in-out;
+
+    			&:hover {
+    				opacity: 1;
+    			}
+			}
+			&:last-child {
+				padding-right:0;
+			}
+		}
+	}
+	&__terms {
+		display: block;
+		text-align: center;
+		color: $primary-white;
+		font-size: 14px;
+    	padding: 5px 0 0;
+    	opacity: 0.9;
+    	&:hover, &:focus {
+    		color: $primary-white;
+    		opacity: 1;
+    	}
+
+	}
+}
+
+.footer_item--separator {
+	@media(max-width: $xs-max) {
+		border-bottom: 1px solid $lighterblue-border;
+		border-top: 1px solid $lightblue-border;
+		width: 100%;
+	    height: 2px;
+	    margin: 25px 0 40px;
+	}
+	@media(min-width:$sm) {
+		border-right: 1px solid $lighterblue-border;
+		width: 1px;
+    	height: 105px;
+	}
+	
+}

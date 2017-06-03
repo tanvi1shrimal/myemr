@@ -1,0 +1,131 @@
+.banner-section {
+	box-shadow: 0 12px 19px 2px rgba(184, 184, 184, 0.07);
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	padding-top: 82px;
+	background-color: #3e4afb;
+
+	@media(min-width: $sm) {
+		padding-top: 165px;
+	}
+	@media(min-width: $md) {
+		padding-top: 185px;
+	}
+	@media(min-width: $lg) {
+		padding-top: 185px;
+	}
+}
+.banner {
+	padding: 80px 0;
+	@media(min-width: $sm) {
+		padding: 0;
+	}
+	&__video {
+		margin-top: 50px;
+		@media(max-width: $xs-max) {
+		   	width: 180px;
+		    text-align: center;
+		    margin: 0 auto;
+		}
+	}
+	&__verticalcenter {
+
+		@media(min-width: $md) {
+			display: flex;
+			align-items: flex-start;
+		}
+	}
+	&__slider {
+		padding: 0 5px 40px;
+		display: none;
+		@media(min-width: $sm) {
+			padding: 0;
+		}
+		&.slick-initialized {
+			display: block;
+		}
+	}
+	&__image {
+		@media(min-width: $sm) {
+		    position: relative;
+		    left: 10%;
+    	}
+	}
+	&__desc {
+		text-align: center;
+		@media(min-width: $sm) {
+			text-align: left;
+			padding-top: 20px;
+		}
+		h1 {
+			font-family: $Poppins-Semibold;
+			font-size: 28px;
+			line-height: 38px;
+			color: $primary-white;
+			margin:0;
+			text-align:center;
+			
+			@media(min-width: $sm) {
+				font-size: 30px;
+				line-height: 40px;
+				padding: 0 0 0 8px;
+				text-align:left;
+			}
+			@media(min-width: $lg) {
+				font-size: 42px;
+				line-height: 56px;
+			}
+		}
+	}
+	&__video-icon {
+		background: url(../img/icon-video-banner.svg) no-repeat scroll 0 0;
+		background-size: 44px 44px;
+		font-family: $Poppins-Regular;
+		font-size: 16px;
+		color: $primary-white;
+    	line-height: 48px;
+    	text-align: center;
+    	padding: 0 0 0 65px;
+    	width: auto;
+
+    	@media(min-width: $sm) {
+    		text-align: left;
+    		margin-left: 8px;
+    	}
+	}
+}
+
+.slick-list {
+	@media(max-width: $xs-max) {
+		padding-bottom: 0;
+	}
+}
+.slick-slide {
+ 	&:focus {
+ 		outline: none
+ 	}
+ }
+.button {
+	&:focus {
+ 		outline: none
+ 	}
+}
+
+#bodymovin{
+    width:100%;
+    display:block;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    text-align: center;
+    opacity: 1;
+    @media(min-width: $sm) {
+		height:271px;
+    }
+    @media(min-width: $md) {
+		height:354px;
+    }
+    @media(min-width: $lg) {
+		height:428px;
+    }
+}
